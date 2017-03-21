@@ -1,0 +1,16 @@
+inherit python-wheel
+
+NAME="python-pathlib2"
+VERSION=2.1.0
+RELEASE=1
+CATEGORY="Python"
+SUMMARY="Backport of Python 3 pathlib"
+DESCRIPTION="The goal of pathlib2 is to provide a backport of standard pathlib
+module which tracks the standard library module, so all the newest features of
+the standard pathlib can be used also on older Python versions."
+
+ARCH=noarch
+
+# should not be needed with the latest Python 3
+PKG_NAMES="python2-pathlib2"
+PKG_IGNORE=${PYTHON3_SITELIB#/}
