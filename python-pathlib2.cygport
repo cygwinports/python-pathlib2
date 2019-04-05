@@ -10,3 +10,5 @@ module which tracks the standard library module, so all the newest features of
 the standard pathlib can be used also on older Python versions."
 
 ARCH=noarch
+
+python27_pathlib2_REQUIRES="python27-scandir"
